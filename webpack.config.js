@@ -28,11 +28,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html'
         })
-        
+
     ],
     devServer: {
         port: 3333,
-        contentBase: path.resolve(__dirname, 'src'),
+        static: {
+            directory: path.resolve(__dirname, 'src')
+        },
         open: true
     },
 
