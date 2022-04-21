@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import './index';
+import './index.scss';
 
 interface IWindowSize {
   width: number;

@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { TsconfigPathsPlugin } = require('tsconfig-paths-webpack-plugin');
 
+require('dotenv').config()
+
 module.exports = {
     mode: 'development',
     entry: './src/index.tsx',
@@ -31,7 +33,7 @@ module.exports = {
 
     ],
     devServer: {
-        port: 3333,
+        port: process.env.APP_PORT || 3333,
         static: {
             directory: path.resolve(__dirname, 'src')
         },

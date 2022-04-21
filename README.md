@@ -9,7 +9,7 @@ $ cd template
 $ yarn
 $ yarn start
 ```
-> Project staring on port: 3333
+> Project staring on port: 3333. You can set port using APP_PORT in .env root file.
 
 ### Build
 
@@ -26,5 +26,3 @@ $ yarn build
 5. Scss
 
 ---
-
-This project doesn't contain any additional libraries. Only loaders and presets that i need to implement my working flow.
