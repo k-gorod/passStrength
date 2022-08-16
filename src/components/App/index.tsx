@@ -1,3 +1,4 @@
+import Form from 'components/Form';
 import React, { useEffect, useState } from 'react';
 
 import './index.scss';
@@ -27,7 +28,7 @@ const App: React.FC = () => {
         height: windowSize.height,
       }}
     >
-      <div className="app_title">App</div>
+      <Form />
     </div>
   );
 };
